@@ -14,7 +14,7 @@ import {
 import readline from "node:readline/promises";
 
 // This determines which tools require human in the loop approval to run
-const TOOLS_WITH_APPROVAL = ['GoogleDocs_CommentOnDocument', 'GoogleDocs_EditDocument', 'GoogleDocs_InsertTextAtEndOfDocument'];
+const TOOLS_WITH_APPROVAL = ['GoogleDocs_CommentOnDocument', 'GoogleDocs_CreateBlankDocument', 'GoogleDocs_CreateDocumentFromText', 'GoogleDocs_EditDocument', 'GoogleDocs_InsertTextAtEndOfDocument'];
 
 // Prompt user for yes/no confirmation
 export async function confirm(question: string, rl?: readline.Interface): Promise<boolean> {
